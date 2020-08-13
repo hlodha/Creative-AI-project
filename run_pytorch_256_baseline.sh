@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES='0,1' # edit this if you want to limit yourself to GPU
+python3 main_CAN_paper.py --dataset wikiart --dataroot ~/Pytorch_experiments/datasets/256_wikiart --outf can_paper_fivecroptrial --imageSize 256 --cuda --ngpu 2 --lamb 1.0 --batchSize 32 --niter 100 --lr 0.000025 --n_class 27 --ngf 128 --ndf 64 --workers 8 #--netG ./can_256_wikiart_faster/netG_epoch_10.pth --netD ./can_256_wikiart_faster/netD_epoch_10.pth
